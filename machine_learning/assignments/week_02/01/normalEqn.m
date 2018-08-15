@@ -1,0 +1,1 @@
+function theta = normalEqn(X, y)  m = length(y);  theta = zeros(m, 1);  theta = pinv(X'*X)*X'*y;

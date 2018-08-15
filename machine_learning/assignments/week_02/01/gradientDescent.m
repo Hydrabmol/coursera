@@ -1,0 +1,1 @@
+function [theta, J] = gradientDescent(X, y, theta, alpha, iterations)  m = length(y);  J = zeros(iterations, 1);  for i=1:iterations    delta = (1/m) * sum(X .* repmat((X*theta - y), 1, size(X, 2)));    theta = (theta' - (alpha * delta))';    %theta = theta - (alpha*delta)';     J(i) = computeCost(X, y, theta);  endend  

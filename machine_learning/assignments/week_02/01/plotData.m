@@ -1,0 +1,1 @@
+function plotData(X, y)  figure;    plot(X, y, 'rx', 'MarkerSize', 10)  xlabel('Population of City in 10,000s')  ylabel('Profit in $10,000')end  

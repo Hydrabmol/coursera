@@ -1,0 +1,1 @@
+data = load('ex1data1.txt');m = length(data);X = [ones(m, 1), data(:, 1)];y = data(:, 2);
